@@ -1,0 +1,219 @@
+
+.homebutton{
+  width:20%;
+  height:20%;
+  padding: 3% 2%;
+  display: inline-block;
+  margin: 1%;
+}
+
+/* Login page */
+
+.loginmiddle {
+    padding: 4%;
+    width: 40%;
+    margin: 2% auto 0;
+    border-radius: 10px;
+}
+
+.search{
+    box-shadow: 0 5px 5px -4px rgba(1, 1, 1, 0.8);
+}
+
+.backcol {
+    height: 80.3%;
+}
+
+.login-form{
+    background-color: grey;
+    display: block;
+    width: 100%;
+    height: 7%;
+    border: none;
+    border-radius: 3px;
+    margin: 1% 0; 
+}
+
+.deletelis {
+    text-align: center;
+}
+
+.deviceinreported {
+    margin: 1% 2%;
+    border-color: yellow;
+    border-radius: 5px;
+    padding: 2%;
+    border-style: solid;
+    background-color: grey;
+}
+
+.reporteddevice {
+    margin: 2% 20%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2% 1%;
+}
+
+.deviceinreported:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+.deletelis:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+.queryres {
+    padding: 2% 5%;
+}
+
+/* eyes */
+.fas:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.logineye{
+    position:relative;
+    left:88%;
+    bottom: 2rem;
+}
+
+.chanpasseye{
+    position: relative;
+    right:28px;
+}
+
+.queryres:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.reportsearch {
+    width: 50%;
+    height: 7%;
+    border-radius: 5px;
+    border: none;
+    margin: 2% 24%;
+    text-align: center;
+}
+
+.reportresult {
+    width: 50%;
+    height: 150%;
+    overflow: auto;
+    margin-left: 24%;
+    position: absolute;
+}
+
+.adminhome {
+    margin: 1% 25%;
+    border-radius: 5px;
+    padding: 2% 0 2% 4%;
+    background-color: burlywood;
+}
+
+body { 
+    color:white;
+    background-color: black;
+}
+
+/* Alert */
+
+.alert-danger{
+    color: red;
+    text-align: center;
+    background-color: black;
+}
+
+.alert-success{
+    color: green;
+    text-align: center;
+    background-color: black;
+}
+
+/* error page */
+
+.full-screen {
+    background-color: #333333;
+    width: 100vw;
+    height: 92.3vh;
+    color: white;
+    font-family: "Arial Black";
+    text-align: center;
+  }
+  
+  .container {
+    padding-top: 4em;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .error-num {
+    font-size: 8em;
+  }
+  
+  .eye {
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 90px;
+    position: relative;
+    width: 67px;
+  }
+  .eye::after {
+    background: #000;
+    border-radius: 50%;
+    bottom: 45.1px;
+    content: " ";
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    width: 33px;
+  }
+  
+
+  /* dot spin */
+  .dot-spin {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), 0 18px 0 0 rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 rgba(152, 128, 255, 0), -18px 0 0 0 rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 rgba(152, 128, 255, 0);
+    animation: dotSpin 1.5s infinite linear;
+    left:23px;
+    display: inline-block;
+  }
+  
+  @keyframes dotSpin {
+    0%,
+    100% {
+      box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    12.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 0 #9880ff, 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    25% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 0 #9880ff, 12.72984px 12.72984px 0 0 #9880ff, 0 18px 0 0 #9880ff, -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    37.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 0 #9880ff, 0 18px 0 0 #9880ff, -12.72984px 12.72984px 0 0 #9880ff, -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    50% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 0 #9880ff, -12.72984px 12.72984px 0 0 #9880ff, -18px 0 0 0 #9880ff, -12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0);
+    }
+    62.5% {
+      box-shadow: 0 -18px 0 -5px rgba(152, 128, 255, 0), 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 0 #9880ff, -18px 0 0 0 #9880ff, -12.72984px -12.72984px 0 0 #9880ff;
+    }
+    75% {
+      box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 -5px rgba(152, 128, 255, 0), 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 0 #9880ff, -12.72984px -12.72984px 0 0 #9880ff;
+    }
+    87.5% {
+      box-shadow: 0 -18px 0 0 #9880ff, 12.72984px -12.72984px 0 0 #9880ff, 18px 0 0 -5px rgba(152, 128, 255, 0), 12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), 0 18px 0 -5px rgba(152, 128, 255, 0), -12.72984px 12.72984px 0 -5px rgba(152, 128, 255, 0), -18px 0 0 -5px rgba(152, 128, 255, 0), -12.72984px -12.72984px 0 0 #9880ff;
+    }
+  }
+  

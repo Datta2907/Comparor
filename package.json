@@ -1,0 +1,25 @@
+{
+  "name": "phone_comparor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.1.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app",
+    "server": "nodemon app",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC"
+}
