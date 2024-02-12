@@ -10,9 +10,9 @@
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "mongodb": "^3.6.6",
-    "mongoose": "^5.12.8"
+    "mongoose": "^5.12.8",
+    "nodemon": "^3.0.3"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node app",
     "server": "nodemon app",
