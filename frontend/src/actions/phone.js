@@ -30,7 +30,7 @@ export const getallphones = () => async dispatch => {
     });
   }
   catch (err) {
-    console.error(err);
+    console.log(err);
     dispatch({
       type: FAIL
     });
