@@ -6,8 +6,8 @@ require('dotenv').config();
 connectdb();
 
 app.use(express.json());
-app.use('/api/auth',require('./routes/auth'));
-app.use('/api/user',require('./routes/user'));
+app.use('/auth',require('./routes/auth'));
+app.use('/user',require('./routes/user'));
 // Set middleware of CORS 
 app.use((req, res, next) => {
   res.setHeader(
