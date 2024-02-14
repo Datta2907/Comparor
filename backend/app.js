@@ -1,5 +1,5 @@
 const express = require('express');
-const connectdb = require('./backend/config/db');
+const connectdb = require('./config/db');
 const app = express();
 const path = require('path');
 require('dotenv').config();
@@ -28,14 +28,16 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Max-Age", 7200);
   next();
 });
-if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use(express.static('frontend/build'));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
-  });
-}  
+// needed in heroku
+// if (process.env.NODE_ENV === 'production') {
+//   // Set static folder
+//   app.use(express.static('frontend/build'));
+
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+//   });
+// }  
 
 const PORT = process.env.PORT || 5000;
 

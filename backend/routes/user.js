@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
-const User = require('../backend/models/user');
-const Phone = require('../backend/models/phone');
-const Report = require('../backend/models/reportuser');
+const User = require('../models/user');
+const Phone = require('../models/phone');
+const Report = require('../models/reportuser');
 
 router.get('/', async (req, res) => {
     try {

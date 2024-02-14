@@ -1,8 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
-const User = require('../backend/models/user');
-const Phone = require('../backend/models/phone');
+const User = require('../models/user');
+const Phone = require('../models/phone');
 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
