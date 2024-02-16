@@ -7,7 +7,7 @@ connectdb();
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://phone-comparor-app.onrender.com"
+    "https://phone-comparor-web.onrender.com"
   );
   res.setHeader(
     "Access-Control-Allow-Methods",
